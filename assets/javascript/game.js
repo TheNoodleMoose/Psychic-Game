@@ -10,9 +10,11 @@ var alphabet = ['a', 'b' , 'c' , 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 var randomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
 console.log(randomLetter);
 var guess = prompt("What Letter Am I Thinking Of?");
-if(guess === randomLetter) {
+var lower = guess.toLowerCase();
+if(lower === randomLetter) {
     alert("That's It!");
 }
 else {
-    alert("That's Not It!")
+    alert("That's Not It!");
 }
+
