@@ -32,6 +32,7 @@ header h1 {
     padding: 10px;
 }
 
+
 .nav li {
     display: inline;
     padding: 10px;
@@ -41,4 +42,9 @@ header h1 {
 .nav a {
     text-decoration: none;
     color: #D4EDF7;
+    margin: 10px;
+}
+
+.nav-container {
+    margin: 10px;
 }
