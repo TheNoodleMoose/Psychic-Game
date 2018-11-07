@@ -5,19 +5,17 @@ console.log("This Works!")
 //setup a var that stores the letters guessed already
 //when player wins make win counter go up, when they lose make loss counter go up
 
-var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
-    'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 var wins = 0;
-var losses = 1;
+var losses = 0;
 var guesses = 9;
 var playersGuess = [];
 
 if (guesses >= 1) {
     function randomLetter() {
-        var alphabet2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+        var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
     'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-        valueToUse = alphabet2[Math.floor(Math.random() * alphabet2.length)];
+        valueToUse = alphabet[Math.floor(Math.random() * alphabet.length)];
         console.log(`This Chose ${valueToUse}`)
     }
     randomLetter();
@@ -50,8 +48,8 @@ if (guesses >= 1) {
         else if(guesses === 1 && lower !== valueToUse) {
             console.log("You Lost")
             alert("You Lost!");
-            document.getElementById("losses").innerHTML = losses;
             losses++;
+            document.getElementById("losses").innerHTML = losses;
             guesses = 9;
             playersGuess = [];
             document.getElementById("guessedLetters").innerHTML = playersGuess;
