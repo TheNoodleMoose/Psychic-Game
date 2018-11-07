@@ -9,6 +9,7 @@ header {
     background-color: #0247FE;
     color: #D4EDF7;
     margin: 0 auto;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -41,8 +42,14 @@ header h1 {
 
 .nav a {
     text-decoration: none;
+    padding: 5px 10px;
     color: #D4EDF7;
     margin: 10px;
+}
+
+.nav a:hover {
+    border-radius: 10px;
+    background-color: #347B98;
 }
 
 .nav-container {
